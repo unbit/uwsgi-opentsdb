@@ -18,7 +18,7 @@ Usage
 
 The plugins exposes a stats pusher for sending metrics to an opentsdb server
 
-the syntax of the stats pushers is:
+the syntax of the stats pusher is:
 
 ```sh
 --stats-push opentsdb:<addr> <tags>
