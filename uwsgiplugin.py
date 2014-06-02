@@ -1,2 +1,2 @@
-NAME='stats_pusher_opentsdb'
+NAME='opentsdb'
 GCC_LIST=['plugin']

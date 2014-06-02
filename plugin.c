@@ -85,14 +85,14 @@ end:
 	uwsgi_buffer_destroy(ub);
 }
 
-static void stats_pusher_opentsdb_init(void) {
+static void opentsdb_init(void) {
         struct uwsgi_stats_pusher *usp = uwsgi_register_stats_pusher("opentsdb", stats_pusher_opentsdb);
 	// we use a custom format not the JSON one
 	usp->raw = 1;
 }
 
-struct uwsgi_plugin stats_pusher_opentsdb_plugin = {
-        .name = "stats_pusher_opentsdb",
-        .on_load = stats_pusher_opentsdb_init,
+struct uwsgi_plugin opentsdb_plugin = {
+        .name = "opentsdb",
+        .on_load = opentsdb_init,
 };
 
